@@ -1,4 +1,4 @@
-FROM node:14
+FROM ubi7/ubi:7.7
 WORKDIR /usr/src/app
 COPY /package*.json /usr/src/app/
 RUN npm install
