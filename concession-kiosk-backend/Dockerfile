@@ -1,4 +1,4 @@
-FROM node:14
+FROM registry.access.redhat.com/ubi8/nodejs-14
 WORKDIR /usr/src/app
 COPY package*.json /usr/src/app/
 USER root
