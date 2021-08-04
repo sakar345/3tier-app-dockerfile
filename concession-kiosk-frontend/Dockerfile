@@ -1,4 +1,5 @@
 FROM registry.access.redhat.com/ubi8/nodejs-14
+USER node
 WORKDIR /usr/src/app
 COPY /package*.json /usr/src/app/
 RUN npm install
