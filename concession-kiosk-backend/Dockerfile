@@ -1,6 +1,7 @@
 FROM node:14
 WORKDIR /usr/src/app
 COPY package*.json /usr/src/app/
+USER root
 RUN npm install
 COPY . .
 RUN chown -R 1001:0 /usr/src/app/ && chmod -R ug+rwx /usr/src/app/
